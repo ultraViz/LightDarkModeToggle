@@ -5,18 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Picture in Picture</title>
+    <title>LightDarkMode</title>
 </head>
 <body>
-    <!-- Video -->
-    <video id="video" controls height="360" width="640 " hidden></video>
-
-    <!-- Button -->
-    <div class="button_container">
-        <button id="button">START</button>
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fa-solid fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
     </div>
+    <!-- navigation -->
+    <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="title_group">
+            <h1>Custom Title Here</h1>
+            <h2>Welcome to the website</h2>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h1>Undraw Illustrations</h1>
+        <div class="about_container">
+            <div class="image-container">
+                <h2>Web Innovation</h2>
+                <img src="img/undraw_proud_coder_light.svg" alt="PCL" id="image1">
+            </div>
+            <div class="image-container">
+                <h2>Web Innovation</h2>
+                <img src="img/undraw_feeling_proud_light.svg" alt="FPL" id="image2">
+            </div>
+            <div class="image-container">
+                <h2>Web Innovation</h2>
+                <img src="img/undraw_conceptual_idea_light.svg" alt="CIL" id="image3">
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="title_group">
+            <h1>Buttons</h1>
+            <div class="buttons">
+                <button class="primary">Primary</button>
+                <button class="secondary">Secondary</button>
+                <button class="primary" disabled>Disabled</button>
+                <button class="outline">Outline</button>
+                <button class="secondary outline">Primary</button>
+                <button class="outline" disabled>Disabled</button>
+            </div>
+           <div class="text-box" id="text-box">
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid doloribus eaque sed ratione facilis explicabo molestias sint aperiam, nulla nihil repudiandae, ipsa sit, ea velit cumque vel expedita! Sint?</p>
+           </div> 
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="social-icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </section>
+
+
+
 
     <!-- Script -->
+    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
