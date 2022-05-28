@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Quattrocento+Sans&display=swap');
+
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Quattrocento Sans', sans-serif; */
+
+html{
+    box-sizing: border-box;    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+}
+
+button{
+    background-color: rgb(32, 32, 32);
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid white ;
+    color: white;    
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+} 
+
+button:hover{
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out
+} 
+
+button:active{
+    background-color: rgb(66, 66, 66);
+    transform: scale(0.9);
+}
